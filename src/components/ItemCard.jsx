@@ -20,34 +20,46 @@ function ItemCard({ item }) {
   };
 
   return (
-    <div  className='rounded-lg overflow-hidden shadow-lg duration-100 max-w-sm relative p-3.5'>{/* hover:scale-110 */}
+    <div  className='rounded-lg overflow-hidden boxcard max-w-sm relative p-3.5 '>{/* hover:scale-110 */}
          
-         <span className='absolute text-sm text-white m-1 p-1 offer '>10% Offer</span>
+         <p className='absolute text-sm text-white top-1 p-1 m-0 offer '>10% Offer</p>
          <br />
-         <br />
-         <span className='absolute text-white text-sm bg-amber-700 rounded-full w-8 h-8 m-1 non'>NonVeg</span>
+        <div className="">
+          <p className='z-10 absolute text-white text-xs bg-orange-500 rounded-full w-8 h-8 pt-1.5 m-1 non'>NonVeg</p>
          
-         <span  className='absolute right-0 m-1 size-10 rounded-full '>
+         <span  className='z-10 absolute right-0 m-1 size-10 rounded-full '>
          <button><img src={share} className='w-7 rounded-full' alt="shareIcon" /></button>
          </span>
+        </div>
+         
         <div>
-        <img className='rounded' src={images[item.image]} alt={item.name} />
+        <img className='rounded hover:scale-95 duration-200 z-0' src={images[item.image]} alt={item.name} />
         
        {/* <img className='rounded' src={require(`../assets/${item.images}.jpeg`)} alt={item.name} /> */}
     </div>
       
-      <div className=''>
-        <span className='text-sm'>{item.name}</span>
-        <br />
+      <div className='justify-center'>
+        <p className='text-sm '>{item.name}</p>
+        <div className='w-fit  mx-auto flex rounded-md
+          hover:cursor-pointer hover:scale-105 duration-200
+            p-0.5 text-xs bg-yellow-100 m-1 justify-center text-slate-600'>
+          <p className='flex text-xs rating px-1'>
+            <span className=' flex text-amber-600'>4.5 
+            <img className='w-3 h-3 ml-1 mr-1.5' src='https://cdn-icons-png.flaticon.com/512/956/956100.png'/>
+            </span><p>
+              256 People Ordered(In 1 Month) 
+            </p>
+          </p>
+            </div>
         <div className='flex justify-center'>
         <span className='weight m-1  font-bold text-sm'>500 Gm</span>
         <span className='m-1 price font-bold text-sm '>₹{item.price}</span>
-        <span className='m-1 line-through opacity-50 text-sm'>₹{item.oldPrice}</span></div>
+        <span className='m-1 line-through font-bold opacity-50 text-sm'>₹{item.oldPrice}</span></div>
       </div>
       <div className='flex'>
         <button className='bookmark rounded-md m-1'>
         {/* <span><img src={bookmark} className='rounded h-8 p-1 w-auto' alt='bookmark icon'/></span> */}
-        <span class="material-symbols-outlined rounded h-8 p-1 w-auto">bookmark</span>
+        <span class="material-symbols-outlined rounded h-8 p-1 w-auto ">bookmark</span>
         </button>
         <button className='add text-white  rounded m-1 w-full'>
             Add
