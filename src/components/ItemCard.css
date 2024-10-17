@@ -1,0 +1,23 @@
+.offer{
+    background: #795548 !important;
+    border-bottom-right-radius: 8px;
+    font-size: smaller;
+    
+}
+.non{
+    font-size: 8px !important;
+}
+.weight{
+    
+    color: #FFAB02;
+}
+.price{
+    color: #795548 ;
+}
+.add{
+    background: #795548 !important;
+}
+.bookmark{
+    color: #795548 ;
+    background: #c09789;
+}
