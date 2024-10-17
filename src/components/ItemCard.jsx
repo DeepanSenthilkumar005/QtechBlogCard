@@ -6,7 +6,8 @@ import img5 from '../assets/5.jpeg';
 import img6 from '../assets/6.jpeg';
 import '../components/ItemCard.css'
 // import bookmark from '../assets/bookmark.png'
-import share from '../assets/blob.png'
+// import share from '../assets/blob.png'
+import share from '../assets/share.png'
 
 function ItemCard({ item }) {
   const images = {
@@ -19,14 +20,15 @@ function ItemCard({ item }) {
   };
 
   return (
-    <div  className='rounded-lg overflow-hidden shadow-lg duration-100 relative p-3.5'>{/* hover:scale-110 */}
+    <div  className='rounded-lg overflow-hidden shadow-lg duration-100 max-w-sm relative p-3.5'>{/* hover:scale-110 */}
          
          <span className='absolute text-sm text-white m-1 p-1 offer '>10% Offer</span>
          <br />
          <br />
          <span className='absolute text-white text-sm bg-amber-700 rounded-full w-8 h-8 m-1 non'>NonVeg</span>
-         <span  className='absolute text-white right-4 m-1  text-sm bg-amber-700 rounded-full '>
-            <img src={share} className='w-7' alt="shareIcon" />
+         
+         <span  className='absolute right-0 m-1 size-10 rounded-full '>
+         <button><img src={share} className='w-7 rounded-full' alt="shareIcon" /></button>
          </span>
         <div>
         <img className='rounded' src={images[item.image]} alt={item.name} />
@@ -47,7 +49,7 @@ function ItemCard({ item }) {
         {/* <span><img src={bookmark} className='rounded h-8 p-1 w-auto' alt='bookmark icon'/></span> */}
         <span class="material-symbols-outlined rounded h-8 p-1 w-auto">bookmark</span>
         </button>
-        <button className='add text-white rounded m-1 w-40'>
+        <button className='add text-white  rounded m-1 w-full'>
             Add
         </button>
         
