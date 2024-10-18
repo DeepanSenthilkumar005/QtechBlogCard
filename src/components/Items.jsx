@@ -50,7 +50,7 @@ function Items() {
     
     )
   return (
-    <section className='w-5/6 mx-auto grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10'>
+    <section className='w-5/6 mx-auto grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-7'>
        { items.map((item) => {
             // return <div key={item.id}>{item.name}</div>
             return <ItemCard key={item.id} item={item} />

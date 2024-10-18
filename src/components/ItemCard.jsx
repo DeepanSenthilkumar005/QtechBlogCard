@@ -20,7 +20,8 @@ function ItemCard({ item }) {
   };
 
   return (
-    <div  className='rounded-lg overflow-hidden boxcard max-w-sm relative p-3.5 '>{/* hover:scale-110 */}
+    <div className="m-3">
+    <div  className='rounded-lg overflow-hidden boxcard max-w-sm relative p-3.5 hover:scale-105 duration-200'>{/* hover:scale-110 */}
          
          <p className='absolute text-sm text-white top-1 p-1 m-0 offer '>10% Offer</p>
          <br />
@@ -59,7 +60,7 @@ function ItemCard({ item }) {
       <div className='flex'>
         <button className='bookmark rounded-md m-1'>
         {/* <span><img src={bookmark} className='rounded h-8 p-1 w-auto' alt='bookmark icon'/></span> */}
-        <span class="material-symbols-outlined rounded h-8 p-1 w-auto ">bookmark</span>
+        <span class="material-symbols-outlined rounded h-8 p-1 w-auto book">bookmark</span>
         </button>
         <button className='add text-white  rounded m-1 w-full'>
             Add
@@ -67,6 +68,7 @@ function ItemCard({ item }) {
         
       </div>
       <p className='w-full text-center text-sm m-1 opacity-70'>Free Delivery</p>
+    </div>
     </div>
   );
 }
