@@ -38,7 +38,7 @@ const Carousel = () => {
             key={index}
             src={image}
             alt={`Slide ${index + 1}`}
-            className={`mx-auto absolute inset-0 sm:w-fit md:h-fit md:w-5/6 object-contain transition-opacity duration-1000 ease-in-out ${
+            className={`mx-auto absolute inset-0 sm:w-full md:h-fit md:w-5/6 object-contain transition-opacity duration-1000 ease-in-out ${
               index === currentIndex ? 'opacity-100' : 'opacity-0'
             }`}
           />
