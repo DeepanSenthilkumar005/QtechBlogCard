@@ -1,6 +1,5 @@
 .boxcard{
     box-shadow: 1px 1px 5px rgb(123, 123, 123) !important;
-
 }
 .boxcard:hover{
     box-shadow:  2px 2px 10px rgb(123, 123, 123) !important;

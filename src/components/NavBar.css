@@ -1,0 +1,19 @@
+@media (max-width: 640px) {
+    .hidecontent {
+      display: none;
+    }
+  }
+
+.smcontent{
+    ul li {
+        margin-top: 1.5rem !important;
+        margin-bottom: 1.5rem !;
+        
+    }
+}
+.brand{
+    border-bottom: 1px black;
+}
+.content{
+    box-shadow: 1px 1px 5px rgb(123, 123, 123) !important;
+}

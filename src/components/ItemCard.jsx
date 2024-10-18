@@ -20,7 +20,7 @@ function ItemCard({ item }) {
   };
 
   return (
-    <div className="m-3">
+    <div className="m-3 ">
     <div  className='rounded-lg overflow-hidden boxcard max-w-sm relative p-3.5 hover:scale-105 duration-200'>{/* hover:scale-110 */}
          
          <p className='absolute text-sm text-white top-1 p-1 m-0 offer '>10% Offer</p>
@@ -34,7 +34,7 @@ function ItemCard({ item }) {
         </div>
          
         <div>
-        <img className='rounded hover:scale-95 duration-200 z-0' src={images[item.image]} alt={item.name} />
+        <img className='rounded duration-200 z-0' src={images[item.image]} alt={item.name} />
         
        {/* <img className='rounded' src={require(`../assets/${item.images}.jpeg`)} alt={item.name} /> */}
     </div>
