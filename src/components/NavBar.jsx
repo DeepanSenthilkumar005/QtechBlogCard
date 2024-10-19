@@ -100,7 +100,7 @@ function NavBar() {
                 <li className="mx-4 hover:text-slate-800 hover:cursor-pointer hover:scale-105 duration-150">
                   <i className="flex">
                   <RiHomeLine className='my-auto me-2'/>
-                  <Link to="/" className="text-xl" >Home</Link>
+                  <Link to="/" className="text-xl " >Home</Link>
                       </i>
                       </li>
                 <li className="mx-4 hover:text-slate-800 hover:cursor-pointer hover:scale-105 duration-150">

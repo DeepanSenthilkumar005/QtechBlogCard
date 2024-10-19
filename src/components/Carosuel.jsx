@@ -32,7 +32,7 @@ const Carousel = () => {
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
     >
-      <div className="overflow-hidden relative h-96 mt-3 my-auto -mx-40 ">
+      <div className="overflow-hidden relative h-96 mt-3 my-auto lg:-mx-40 ">
         {images.map((image, index) => (
           <img
             key={index}
