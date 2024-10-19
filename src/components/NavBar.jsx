@@ -16,6 +16,10 @@ import { Link } from "react-router-dom";
 function NavBar() {
   const [toggle,setToggle]=useState(false);
 
+  function closeNav(){
+    setToggle(false);
+  }
+
   const handleResize = () => {
     if (window.matchMedia("(min-width: 768px)").matches) {
       setToggle(false);
@@ -78,7 +82,7 @@ function NavBar() {
             
             <Link to="/profile" className="text-xl"><i className='flex'><FiUser className='my-auto'/></i></Link></li>
           <li className="mx-4 hover:text-csbrown hover:cursor-pointer hover:scale-105 duration-150">
-            <Link to="/liked" className="text-xl"> <i  className='flex'><GoHeart   className='my-auto' /></i></Link>
+            <Link to="/wishlist" className="text-xl"> <i  className='flex'><GoHeart   className='my-auto' /></i></Link>
            </li>
           <li className="mx-4 hover:text-csbrown hover:cursor-pointer hover:scale-105 duration-150">
             
@@ -87,6 +91,8 @@ function NavBar() {
         </div>
       </div>
   </nav>
+
+  {/* Open in the Mobile view */}
       <div className="asidebar">
         
   {toggle && (
@@ -100,13 +106,13 @@ function NavBar() {
                 <li className="mx-4 hover:text-slate-800 hover:cursor-pointer hover:scale-105 duration-150">
                   <i className="flex">
                   <RiHomeLine className='my-auto me-2'/>
-                  <Link to="/" className="text-xl " >Home</Link>
+                  <Link to="/" onClick={closeNav} className="text-xl " >Home</Link>
                       </i>
                       </li>
                 <li className="mx-4 hover:text-slate-800 hover:cursor-pointer hover:scale-105 duration-150">
                   <i className="flex">
                   <TbEggs  className='my-auto me-2' />
-                    <Link to="/products" className="text-xl">
+                    <Link to="/products" onClick={closeNav}  className="text-xl">
                       Products
                       </Link>
                       </i>
@@ -114,7 +120,7 @@ function NavBar() {
                 <li className="mx-4 hover:text-slate-800 hover:cursor-pointer hover:scale-105 duration-150">
                   <i className="flex">
                   <GoHeart   className='my-auto me-2' />
-                    <Link to="/liked" className="text-xl">
+                    <Link to="/wishlist" onClick={closeNav}  className="text-xl">
                       Wishlist
                       </Link>
                       </i>
@@ -122,13 +128,13 @@ function NavBar() {
                 <li className="mx-4 hover:text-slate-800 hover:cursor-pointer hover:scale-105 duration-150">
                   <i className="flex">
                   <LiaBlogger  className='my-auto me-2' />
-                  <Link to="/blog" className="text-xl">Blog</Link>
+                  <Link to="/blog" onClick={closeNav}  className="text-xl">Blog</Link>
                       </i>
                       </li>
                 <li className="mx-4 hover:text-slate-800 hover:cursor-pointer hover:scale-105 duration-150">
                   <i className="flex">
                   <FiPhone  className='my-auto me-2' />
-                    <Link to="/contact" className="text-xl">
+                    <Link to="/contact" onClick={closeNav}  className="text-xl">
                       Contact Us
                       </Link>
                       </i>
@@ -136,7 +142,7 @@ function NavBar() {
                 <li className="mx-4 hover:text-slate-800 hover:cursor-pointer hover:scale-105 duration-150">
                   <i className="flex">
                   <LuShoppingBag   className='my-auto me-2' />
-                    <Link to="/cart" className="text-xl">
+                    <Link to="/cart" onClick={closeNav}  className="text-xl">
                       Cart
                       </Link>
                       </i>
@@ -144,7 +150,7 @@ function NavBar() {
                 <li className="mx-4 hover:text-slate-800 hover:cursor-pointer hover:scale-105 duration-150">
                   <i className="flex">
                   <IoIosLogOut className='my-auto me-2' />
-                    <Link to="/logout" className="text-xl">
+                    <Link to="/logout" onClick={closeNav}  className="text-xl">
                       Logout
                       </Link>
                       </i>
