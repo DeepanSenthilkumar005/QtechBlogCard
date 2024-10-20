@@ -10,6 +10,8 @@ export default {
         'csbrown': '#795548',
         'csyellow': '#FFAB02',
       },
+      
+      
 
     },
   },
