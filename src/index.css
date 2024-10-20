@@ -10,6 +10,10 @@ body {
 
 @layer components {
   .cartitems .cartitemname {
-    @apply text-csyellow; 
+    @apply text-csyellow;
+  }
+  
+  .cartitems .cartitemamount {
+    @apply text-csbrown;
   }
 }

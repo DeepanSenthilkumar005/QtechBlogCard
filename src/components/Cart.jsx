@@ -24,29 +24,34 @@ function Cart() {
                <div className="font-semibold text-black"> Secure Checkout</div>
                 <hr className='h-0.5 mt-1 mb-3 bg-csbrown border-none' />
             </span>
-            <span className='sm:block md:hidden'>
+            {/* <span className='sm:block md:hidden'>
             <button onClick={()=>{
                     
            }} className='hover:scale-105 hover:cursor-pointer duration-100'>  Cart </button>
-            </span>
+            </span> */}
 
         </div>
-            <span className='flex  font-semibold'><FaLocationDot className='text-csyellow text-lg mt-0.5'/> 
-                            Delivery Address
-                            </span>
+           
                             
         
-        <div className='flex '>
-            <div className="leftcontentcart m-2  md:w-3/5">
-                <div className='deliveryaddress grid sm:grid-cols-1 md:grid-cols-2 md:gap-4'>
-            <div className="deliverycontent rounded-md md:col-span-1 bg-csyellow m-1 sm:col-span-2 p-2">
-                    <FaLocationDot my-2/>
-                    Lorem ipsum dolor sit amet consectetur adipisiditate aspernatur aut explicabo sed unde rem.
+        <div className='sm:block md:flex '>
+            <div className="leftcontentcart m-2 sm:w-full sm:block  md:w-4/6">
+                <div className='deliveryaddress '>
+                <span className='flex  font-semibold'><FaLocationDot className='text-csyellow text-lg mt-0.5'/> 
+                            Delivery Address
+                            </span>
+            <div className="sm:block md:flex">
+            <div className="deliverycontent rounded-md  bg-csyellow m-1 p-2">
+                    <FaLocationDot className="me-1 inline"/>
+                    <p className='inline'>Lorem ipsum dolor sit amet consectetur adipisiditate aspernatur aut explicabo sed unde rem.</p>
                 </div>
-                <div className="deliverycontent rounded-md md:col-span-1 m-1 border-2 border-dotted border-csyellow sm:col-span-2 p-2">
-                    <FaLocationDot className="my-2"/>
+                <div className="deliverycontent rounded-md m-1 border-2 border-dotted border-csyellow p-2">
+                    <FaLocationDot className="me-1 inline"/>
+                    <p className="inline">
                     Lorem ipsum dolor sit amet consectetur adipisiditate aspernatur aut explicabo sed unde rem.
+                    </p>
                 </div>
+            </div>
 
             </div>
             {/* phone number for the cart */}
@@ -60,13 +65,13 @@ function Cart() {
             {/* <div className='phonenumber grid sm:grid-cols-1 md:grid-cols-2 md:gap-4'> */}
             <div className='phonenumber flex '>
 
-            <div className="phonenumbercontent w-fit  rounded-md md:col-span-1 bg-csyellow m-1 col-span-1 p-2 ">
-                   <div className="flex">
-                   <FiPhone className='mt-1 me-1'/> 
+            <div className="phonenumbercontent flex w-fit sm:my-1 rounded-md  bg-csyellow m-1 p-2 ">
+                   
+                   <FiPhone className='mt-1 me-1 flex'/> 
                    98776543210
-                   </div>
+                   
                 </div>
-                <div className="w-fit my-auto phonenumbercontent rounded-md md:col-span-1 m-1 border-2 border-dotted border-csyellow col-span-1 p-2">
+                <div className=" sm:my-1 mx-2 w-fit my-auto phonenumbercontent rounded-md md:col-span-1 m-1 border-2 border-dotted border-csyellow p-2">
                     + Add Alternateive Number
                 </div>
 
@@ -84,14 +89,14 @@ function Cart() {
             {/* <div className='phonenumber sm:grid md:flex sm:grid-cols-1 md:grid-cols-2 md:gap-4'> */}
             <div className='order flex'>
 
-            <div className="ordercontent w-fit  rounded-md  bg-csyellow m-1  p-2 ">
-                   <div className="flex">
+            <div className=" ordercontent w-fit flex rounded-md bg-csyellow m-1  p-2 ">
+                   
                    <FiCalendar  className='mt-1 me-1'/> 
                    Subscription
-                   </div>
+                   
                 </div>
-                <div className="w-fit my-auto ordercontent rounded-md m-1 border-2 border-dotted border-csyellow  p-2">
-                <div className="flex">
+                <div className="w-fit  sm:col-span-1  sm:mx-1 my-auto ordercontent rounded-md m-1 border-2 border-dotted border-csyellow  p-2">
+                <div className="flex mx-2">
                    <FiCalendar  className='mt-1 me-1'/> 
                    Schedule Order
                    </div>
@@ -103,7 +108,7 @@ function Cart() {
 
             </div>
             
-            <div className='rightcontentcart sm:hidden p-3 ms-3 w-2/5 h-[70vh] flex-col md:flex  md:col-span-2 border-2 border-slate-600'>
+            <div className='rightcontentcart sm:w-4/5 md:w-2/6 sm:mx-auto sm:mt-5 h-fit sm:flex p-3 ms-3  flex-col md:flex  md:col-span-2 border-2 border-slate-600'>
                 <div className="carthead flex justify-between m-1">
                     <p className='font-semibold'>
                         Cart
@@ -140,7 +145,7 @@ function Cart() {
                             </button>
                         </div>
                         </div>
-                        <div className="cartitemamount ms-2 text-csbrown font-bold text-lg ">
+                        <div className="cartitemamount ms-2  font-bold text-lg ">
                         ₹{200*count}
                         </div>
                         
@@ -166,7 +171,7 @@ function Cart() {
                             </button>
                         </div>
                         </div>
-                        <div className="cartitemamount ms-2 text-csbrown font-bold text-lg ">
+                        <div className="cartitemamount ms-2 font-bold text-lg ">
                         ₹{200*count}
                         </div>
                         
@@ -178,6 +183,39 @@ function Cart() {
                     </div>
                    
                 </div>
+                <div className="priceheading">
+                    <p className='font-semibold'>Price Details (2 items)</p>
+                <p className='text-[red] text-md font-semibold'> Monthly + 3 days/Week plan + 8:30 Delivery time</p>
+                </div>
+                <div className="pricedetail  w-full">
+                    <div className="totalmrp flex w-full justify-between">
+                        <p>Total MRP</p>
+                        <p>₹600</p>
+                    </div>
+                    <div className="discount flex w-full justify-between">
+                        <p>Discount on MRP</p>
+                        <p>₹99</p>
+                    </div>
+                    <div className="platformfee flex w-full justify-between">
+                        <p>Platform Fee</p>
+                        <p className='text-green-600 font-semibold'>FREE</p>
+                    </div>
+                    <div className="shippingfee flex w-full justify-between">
+                        <p>Shipping Fee</p>
+                        <p className='text-green-600 font-semibold'>FREE</p>
+                    </div>
+                    <div className="subtotal font-bold mt-1 flex w-full justify-between">
+                        <p>Subtotal </p>
+                        <p>₹501</p>
+                    </div>
+                    <div className="checkout font-bold mt-1 flex w-full justify-center">
+                        <button className='bg-csbrown text-white w-full py-2 mx-3 hover:scale-95 duration-150 rounded-md'>
+                            Checkout
+                        </button>
+                    </div>
+
+                </div>
+                
             </div>
         </div>
 
