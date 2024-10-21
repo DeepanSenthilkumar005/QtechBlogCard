@@ -35,7 +35,7 @@ function Cart() {
                             
         
         <div className='sm:block md:flex '>
-            <div className="leftcontentcart m-2 sm:w-full sm:block  md:w-4/6">
+            <div className="leftcontentcart m-2 px-3 mb-2 sm:w-full sm:block  md:w-4/6">
                 <div className='deliveryaddress '>
                 <span className='flex  font-semibold'><FaLocationDot className='text-csyellow text-lg mt-0.5'/> 
                             Delivery Address
@@ -85,8 +85,6 @@ function Cart() {
                             Type of Order
                             </span>
                            
-            
-            {/* <div className='phonenumber sm:grid md:flex sm:grid-cols-1 md:grid-cols-2 md:gap-4'> */}
             <div className='order flex'>
 
             <div className=" ordercontent w-fit flex rounded-md bg-csyellow m-1  p-2 ">
@@ -104,11 +102,82 @@ function Cart() {
 
             </div>
                 </div>
+                
+
+                <div className="plan md:grid md:grid-cols-2 sm:block">
+                 {/* Types of Subscription for the cart */}
             
+                 <div className="subscriptioncontent md:col-span-1 ">
+                <span className='flex  font-semibold '>
+                            Type of Subscription ?
+                            </span>
+                           
+            <div className="subscriptionpaln">
+                <ul className="flex">
+                    <li className="underline mx-2 my-3 hover:cursor-pointer hover:scale-105 duration-150 underline-offset-8 text-csyellow">Monthly</li>
+                    <li className="underline mx-2 my-3 hover:cursor-pointer hover:scale-105 duration-150 underline-offset-8">Weekly</li>
+                    <li className="underline mx-2 my-3 hover:cursor-pointer hover:scale-105 duration-150 underline-offset-8">Custom</li>
+                </ul>
+            </div>
+                </div>
+
+                {/* Type of plan for the days per week */}
+
+                    <div className="weekplancontent md:col-span-1">
+                    <span className='flex  font-semibold '>
+                            What's the paln?
+                            </span>
+                           
+            <div className="daypaln flex">
+                <ul className="flex">
+                    <li className=" border-2 border-csyellow rounded-md p-1 mx-2 my-3 hover:cursor-pointer hover:scale-105 duration-150 px-2 text-csyellow">3-Days/Week</li>
+                    <li className=" border-2 border-slate-600 rounded-md p-1 mx-2 my-3 hover:cursor-pointer hover:scale-105 duration-150 px-2 ">5-Days/Week</li>
+                </ul>
+            </div>
+                    </div>
+
+                </div>
+
+                <div className="timeandnote md:grid md:grid-cols-2 sm:block">
+
+                
+                {/* time of the delivery*/}
+                <div className="timecontent md:col-span-1 ">
+                <span className='flex  font-semibold '>
+                            what time do you want us to delivery?
+                            </span>
+                           
+            <div className="subscriptionpaln">
+                <ul className="flex">
+                    <li className="underline mx-2 my-3 hover:cursor-pointer hover:scale-105 duration-150 underline-offset-8 flex">
+                        <FiCalendar  className='mt-1 me-1'/>
+                        08:30</li>
+                    <li className=" mx-2 my-3 hover:cursor-pointer hover:scale-105 duration-150 text-csyellow">24 hrs</li>
+                </ul>
+            </div>
+                </div>
+
+                {/* notes (feed back) */}
+                <div className="notes md:col-span-1">
+                    <span className='flex  font-semibold '>
+                            Any note for us?
+                    </span>
+
+                    <div className="notecontent border-1 border-slate-500">
+                    {/* <input type="text" className='rounded border border-slate-600 h-16' value={'asdgh'} /> */}
+                    <textarea name="" id="" placeholder='Type your note here' className='rounded p-2 text-sm border border-slate-600'>
+
+                    </textarea>
+                    </div>
+                    
+
+                </div>
+
+                </div>
 
             </div>
             
-            <div className='rightcontentcart sm:w-4/5 md:w-2/6 sm:mx-auto sm:mt-5 h-fit sm:flex p-3 ms-3  flex-col md:flex  md:col-span-2 border-2 border-slate-600'>
+            <div className='rightcontentcart sm:w-4/5 md:w-2/6 sm:mx-auto sm:mt-5 h-fit sm:flex p-3 ms-3 my-2 flex-col md:flex  md:col-span-2 border-2 border-slate-600'>
                 <div className="carthead flex justify-between m-1">
                     <p className='font-semibold'>
                         Cart

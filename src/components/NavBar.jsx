@@ -98,7 +98,7 @@ function NavBar() {
   {toggle && (
         
         <div className="smcontent  flex showcontent bg-green-400 ">
-            <div className="content h-full bg-white shadow-lg ms-auto fixed z-50 right-0 w-2/4 p-2 ">
+            <div className="navelementcontent h-full bg-white shadow-lg ms-auto fixed z-50 right-0 w-2/4 p-2 ">
             <span className="block text-lg ms-1 mt-1"><button onClick={()=>{
               setToggle(!toggle)
             }}><SlClose className="mt-0"/></button></span>
