@@ -36,7 +36,7 @@ function Cart() {
         
         <div className='sm:block md:flex '>
             <div className="leftcontentcart m-2 px-3 mb-2 sm:w-full sm:block  md:w-4/6">
-                <div className='deliveryaddress '>
+                <div className='deliveryaddress mt-4 my-2'>
                 <span className='flex  font-semibold'><FaLocationDot className='text-csyellow text-lg mt-0.5'/> 
                             Delivery Address
                             </span>
@@ -56,7 +56,7 @@ function Cart() {
             </div>
             {/* phone number for the cart */}
             
-                <div className="phonecontent m-1">
+                <div className="phonecontent m-1 my-2">
                 <span className='flex  font-semibold'><FiPhone className='text-csyellow text-lg mt-0.5'/> 
                             Phone Number
                             </span>
@@ -65,7 +65,7 @@ function Cart() {
             {/* <div className='phonenumber grid sm:grid-cols-1 md:grid-cols-2 md:gap-4'> */}
             <div className='phonenumber flex '>
 
-            <div className="phonenumbercontent flex w-fit sm:my-1 rounded-md  bg-csyellow m-1 p-2 ">
+            <div className="phonenumbercontent flex w-fit sm:my-1 rounded-md h-fit bg-csyellow m-1 p-2 ">
                    
                    <FiPhone className='mt-1 me-1 flex'/> 
                    98776543210
@@ -80,14 +80,14 @@ function Cart() {
 
                 {/* Types of Order for the cart */}
             
-                <div className="ordercontent">
+                <div className="ordercontent my-2">
                 <span className='flex  font-semibold'><FaLocationDot  className='text-csyellow text-lg mt-0.5'/> 
                             Type of Order
                             </span>
                            
             <div className='order flex'>
 
-            <div className=" ordercontent w-fit flex rounded-md bg-csyellow m-1  p-2 ">
+            <div className=" ordercontent h-fit w-fit flex rounded-md bg-csyellow m-1  p-2 ">
                    
                    <FiCalendar  className='mt-1 me-1'/> 
                    Subscription
@@ -104,7 +104,7 @@ function Cart() {
                 </div>
                 
 
-                <div className="plan md:grid md:grid-cols-2 sm:block">
+                <div className="plan md:grid md:grid-cols-2 sm:block sm:my-2">
                  {/* Types of Subscription for the cart */}
             
                  <div className="subscriptioncontent md:col-span-1 ">
@@ -138,7 +138,7 @@ function Cart() {
 
                 </div>
 
-                <div className="timeandnote md:grid md:grid-cols-2 sm:block">
+                <div className="timeandnote my-2 md:grid md:grid-cols-2 sm:block">
 
                 
                 {/* time of the delivery*/}
